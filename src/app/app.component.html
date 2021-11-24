@@ -1,0 +1,42 @@
+Exemplo de diretiva NgIf
+<hr>
+<div *ngIf="this.exibirNome" class="box">
+  Nome: Let' s Code
+</div>
+
+<div *ngIf="!this.exibirNome" class="box">
+  Turma: 769
+</div>
+
+<button (click)="this.alterar()">Alterar</button>
+
+<h1> {{ cabecalho }}</h1>
+<h2>
+  <ul>
+    <li *ngFor="let time of times">
+      {{ time }} 
+    </li>
+  </ul>
+</h2>
+
+
+<h2>Exemplo de diretiva ngSwitch</h2>
+<hr>
+<select [(ngModel)]="selection">
+  <option *ngFor="let option of options"> {{ option }} </option>
+</select>
+
+<div [ngSwitch]="selection">
+  <div class="block1" *ngSwitchCase="options[0]"> Michael Tadeu </div>
+  <div class="block2" *ngSwitchCase="options[1]"> Rua dos Sabias </div>
+  <div class="block3" *ngSwitchCase="options[2]"> 31 09088 </div>
+  <div class="block4" *ngSwitchDefault> outros </div>
+</div>
+<app-my-component></app-my-component>
+
+<h1>Como funciona Observables?</h1>
+<ul>
+  <li *ngFor="let valorRecebido of valoresRecebidos">
+    {{ valorRecebido }}
+  </li>
+</ul>

@@ -1,0 +1,32 @@
+div.box {
+    width: 200px;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid black;
+    color: white;
+    background-color: blue;
+}
+
+.block1 {
+    background-color: red;
+    margin: 10px;
+    padding: 10px;
+}
+
+.block2 {
+    background-color: blue;
+    margin: 10px;
+    padding: 10px;
+}
+
+.block3 {
+    background-color: pink;
+    margin: 10px;
+    padding: 10px;
+}
+
+.block4 {
+    background-color: gold;
+    margin: 10px;
+    padding: 10px;
+}
